@@ -1,27 +1,98 @@
-# perplex-clone
+# Perplexity AI Clone
 
-Small clone of perplexity AI
+A modern clone of Perplexity AI built with Next.js and TypeScript.
 
 ## Tech Stack
 
-Frontend: Next.js (React-based, SSR/SEO friendly)
-Backend: Node.js with Express.js
-Database: PostgreSQL
-AI Integration: OpenAI GPT API
-Cloud Storage: AWS S3 (for file uploads and assets)
-Authentication: NextAuth.js (simple OAuth integration)
-Deployment: Vercel (frontend)
+- **Frontend**: Next.js 14 with TypeScript
+- **Backend**: Node.js with Express and TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Custom components with clsx and tailwind-merge for styling
+- **Development**: ESLint, TypeScript, PostCSS
+
+## Project Structure
+
+```
+perplex-clone/
+├── src/                 # Frontend source code
+├── backend/            # Backend source code
+│   ├── src/           # Backend TypeScript source
+│   └── data/          # Data storage
+├── public/            # Static assets
+└── .next/            # Next.js build output
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/perplex-clone.git
+cd perplex-clone
+```
+
+2. Install frontend dependencies:
+
+```bash
+npm install
+```
+
+3. Install backend dependencies:
+
+```bash
+cd backend
+npm install
+```
+
+4. Set up environment variables:
+   - Copy `.env.example` to `.env.local` in the root directory
+   - Copy `backend/.env.example` to `backend/.env`
+
+### Development
+
+1. Start the frontend development server:
+
+```bash
+npm run dev
+```
+
+2. Start the backend server (in a separate terminal):
+
+```bash
+cd backend
+npm run dev
+```
+
+The application will be available at `http://localhost:3000`
+
+Note: Make sure you have all environment variables set up correctly in both `.env.local` and `backend/.env` files before starting the servers.
 
 ## Features
 
-- [ ] Chat interface with search functionality
-- [ ] Contextual memory
-- [ ] Focus modes
-- [ ] Multimodal capabilities
-- [ ] Real-time updates
-- [ ] Customizable outputs
-- [ ] Code generation and debugging
-- [ ] Source transparency
+- Modern, responsive UI with Tailwind CSS
+- Type-safe development with TypeScript
+- Hot reloading for development
+- ESLint for code quality
+- Custom UI components with utility-first CSS
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## What is perplexity?
 
